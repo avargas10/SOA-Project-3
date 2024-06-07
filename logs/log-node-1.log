@@ -1,0 +1,27 @@
+2024-06-07 16:36:27,504 - INFO - Reading page 0
+2024-06-07 16:36:27,504 - INFO - Page Tracker
+[{'page': 0, 'count': 1}, {'page': 3, 'count': 1}, {'page': 1, 'count': 2}, {'page': 2, 'count': 2}]
+2024-06-07 16:36:27,505 - INFO - {0: <page.Page object at 0x10583a030>}
+2024-06-07 16:36:27,505 - INFO - Page Tracker
+[{'page': 0, 'count': 0}, {'page': 3, 'count': 1}, {'page': 1, 'count': 2}, {'page': 2, 'count': 2}]
+2024-06-07 16:36:27,506 - INFO - Reading page 1
+2024-06-07 16:36:27,506 - INFO - {1: <page.Page object at 0x10583a090>, 0: <page.Page object at 0x10583a030>}
+2024-06-07 16:36:27,506 - INFO - Page Tracker
+[{'page': 0, 'count': 0}, {'page': 3, 'count': 1}, {'page': 1, 'count': 1}, {'page': 2, 'count': 2}]
+2024-06-07 16:36:27,508 - INFO - Reading page 2
+2024-06-07 16:36:27,508 - INFO - {2: <page.Page object at 0x1058380e0>, 0: <page.Page object at 0x10583a030>, 1: <page.Page object at 0x10583a090>}
+2024-06-07 16:36:27,508 - INFO - Page Tracker
+[{'page': 0, 'count': 0}, {'page': 3, 'count': 1}, {'page': 1, 'count': 1}, {'page': 2, 'count': 1}]
+2024-06-07 16:36:27,512 - INFO - Writting page 2
+2024-06-07 16:36:27,512 - INFO - {0: <page.Page object at 0x10583a030>, 1: <page.Page object at 0x10583a090>, 2: <page.Page object at 0x105838c80>}
+2024-06-07 16:36:27,512 - INFO - Page Tracker
+[{'page': 0, 'count': 0}, {'page': 2, 'count': 0}, {'page': 3, 'count': 1}, {'page': 1, 'count': 1}]
+2024-06-07 16:36:27,518 - INFO - Writting page 3
+2024-06-07 16:36:27,518 - INFO - {3: <page.Page object at 0x10583a060>, 2: <page.Page object at 0x105838c80>, 1: <page.Page object at 0x10583a090>}
+2024-06-07 16:36:27,518 - INFO - Page Tracker
+[{'page': 0, 'count': 0}, {'page': 2, 'count': 0}, {'page': 3, 'count': 0}, {'page': 1, 'count': 1}]
+2024-06-07 16:36:27,523 - INFO - Removing page 2
+2024-06-07 16:36:27,524 - INFO - Reading page 1
+2024-06-07 16:36:27,524 - INFO - {3: <page.Page object at 0x10583a060>, 1: <page.Page object at 0x1058393d0>}
+2024-06-07 16:36:27,524 - INFO - Page Tracker
+[{'page': 0, 'count': 0}, {'page': 2, 'count': 0}, {'page': 3, 'count': 0}, {'page': 1, 'count': 0}]

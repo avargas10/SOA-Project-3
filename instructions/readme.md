@@ -1,0 +1,1 @@
+python3 console_dsm_config_app.py -c /Users/andresvargasrivera/repos/SOA-Project-3/config/config1.json -r /Users/andresvargasrivera/repos/SOA-Project-3/instructions/instructions.txt -o salida.txt -a LRU -d True

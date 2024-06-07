@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from dsmSystem import DSMSystem
+from simulator import Simulator
 
 class DSMConfigApp:
     def __init__(self, root):
@@ -35,13 +36,29 @@ class DSMConfigApp:
         ttk.Checkbutton(self.root, variable=self.replication_var).grid(row=4, column=1)
         
         # List of references
-        ttk.Label(self.root, text="Page References (format: node,page,mode):").grid(row=5, column=0, sticky=tk.W)
+        ttk.Label(self.root, text="Page References (example: output.txt):").grid(row=5, column=0, sticky=tk.W)
         self.references_var = tk.StringVar()
         ttk.Entry(self.root, textvariable=self.references_var).grid(row=5, column=1)
         
         # Submit button
         ttk.Button(self.root, text="Submit", command=self.submit).grid(row=6, column=0, columnspan=2)
+
+        # Help button
+        ttk.Button(self.root, text="Help", command=self.help).grid(row=7, column=0, columnspan=2)
     
+    def help(self):
+        help_text = (
+            "Esta interfaz permite configurar un sistema DSM (Distributed Shared Memory).\n\n"
+            "1. Total Number of Pages: Número total de páginas en la memoria compartida.\n"
+            "2. Number of Nodes: Número de nodos en el sistema DSM.\n"
+            "3. Pages per Node: Número de páginas asignadas a cada nodo.\n"
+            "4. Page Replacement Algorithm: Algoritmo de reemplazo de páginas a utilizar. Opciones: LRU (Least Recently Used), Optimal, FIFO (First In First Out).\n"
+            "5. Enable Replication: Opción para habilitar la replicación de páginas entre nodos.\n"
+            "6. Page References: Lista de referencias de páginas en el formato 'node,page,mode', donde 'node' es el identificador del nodo, 'page' es la página y 'mode' es el modo de acceso ('read' o 'write').\n\n"
+            "Una vez configurados los parámetros, presione 'Submit' para iniciar la simulación."
+        )
+        messagebox.showinfo("Ayuda", help_text)
+
     def submit(self):
         try:
             total_pages = self.total_pages_var.get()
@@ -49,7 +66,7 @@ class DSMConfigApp:
             pages_per_node = self.pages_per_node_var.get()
             replacement_algorithm = self.replacement_algorithm_var.get()
             replication = self.replication_var.get()
-            references = self.references_var.get()
+            references_path = self.references_var.get()
             
             if not (total_pages > 0 and num_nodes > 0 and pages_per_node > 0):
                 raise ValueError("Number of pages, nodes, and pages per node must be greater than 0.")
@@ -57,15 +74,7 @@ class DSMConfigApp:
             if replacement_algorithm not in ["LRU", "Optimal", "FIFO"]:
                 raise ValueError("Invalid replacement algorithm selected.")
             
-            references_list = [ref.split(",") for ref in references.split(";")]
-            for ref in references_list:
-                if len(ref) != 3:
-                    raise ValueError("Each reference must have exactly three components: node,page,mode.")
-                ref[0] = int(ref[0])  # node
-                ref[1] = ref[1]  # page
-                ref[2] = ref[2]  # mode
-                if ref[2] not in ["r", "w"]:
-                    raise ValueError("Mode must be 'r' (read) or 'w' (write).")
+            references_list = self.load_references(references_path)
             
             config = {
                 "total_pages": total_pages,
@@ -76,26 +85,27 @@ class DSMConfigApp:
                 "references": references_list
             }
             
-            # self.simulate_dsm(config)
+            self.simulate_dsm(config, references_list)
         
         except Exception as e:
             messagebox.showerror("Invalid Input", str(e))
     
-    def simulate_dsm(self, config):
-        dsm_system = DSMSystem(config['total_pages'], config['num_nodes'], config['pages_per_node'],
-                               config['replacement_algorithm'], config['replication'])
-        for ref in config['references']:
-            node_id, page, mode = ref
-            node = dsm_system.nodes[node_id]
-            node.access_page(int(page), mode, dsm_system)
-        
-        self.show_statistics(dsm_system)
+    def load_references(self, references_path):
+        with open(references_path, 'r') as file:
+            references = []
+            for line in file:
+                node, page, mode = line.strip().split(',')
+                references.append((int(node), page, mode))
+            return references
+
+    def simulate_dsm(self, config, references):
+        self.simulator = Simulator(config=config, instructions=references)
+        print("Simulation completed successfully. Check the output file for statistics.")
     
     def show_statistics(self, dsm_system):
         stats = "DSM Simulation Statistics\n"
         for node in dsm_system.nodes:
             stats += f"Node {node.id}: Page Faults: {node.page_faults}, Hits: {node.hits}, Invalidations: {node.invalidations}\n"
-        print(stats)
         messagebox.showinfo("Simulation Statistics", stats)
 
 # Main application

@@ -1,0 +1,12 @@
+2024-06-07 16:36:27,496 - INFO - Node 0 -- Page 0 added to local memory at position 0
+2024-06-07 16:36:27,498 - INFO - Node 0 -- Page 1 added to local memory at position 1
+2024-06-07 16:36:27,499 - INFO - Node 0 -- Page 2 added to local memory at position 2
+2024-06-07 16:36:27,501 - INFO - Node 0 -- Page 0 replaced with page 3.
+2024-06-07 16:36:27,503 - INFO - Node 0 -- Page 1 replaced with page 4.
+2024-06-07 16:36:27,504 - INFO - Node 1 -- Page 0 added to local memory at position 0
+2024-06-07 16:36:27,506 - INFO - Node 1 -- Page 1 added to local memory at position 1
+2024-06-07 16:36:27,508 - INFO - Node 1 -- Page 2 added to local memory at position 2
+2024-06-07 16:36:27,512 - INFO - Node 1 -- Page 2 added to local memory at position 2
+2024-06-07 16:36:27,518 - INFO - Node 1 -- Page 0 replaced with page 3.
+2024-06-07 16:36:27,522 - INFO - Node 0 -- Page 2 added to local memory at position 1
+2024-06-07 16:36:27,524 - INFO - Node 1 -- Page 1 added to local memory at position 1
