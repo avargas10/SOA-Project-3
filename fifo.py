@@ -8,9 +8,9 @@ class Fifo(Replacer):
         self.logPath = SCHEDULER_LOGGER + "-FIFO"
         self.logger = Logger(self.logPath) 
 
-    def replace_page(self, new_page, node):
+    def replace_page(self, new_page, node, index):
         # Check if the new page is already in the local memory
-        exist, node = self.check_existing(new_page, node) 
+        exist, node = self.check_existing(new_page, node, index) 
         if exist:
             return node
         # Check if there's space in the local memory

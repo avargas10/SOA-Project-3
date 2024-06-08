@@ -1,28 +1,6 @@
-2024-06-07 16:36:27,496 - INFO - Reading page 0
-2024-06-07 16:36:27,496 - INFO - Page Tracker
-[{'page': 0, 'count': 1}, {'page': 1, 'count': 1}, {'page': 3, 'count': 1}, {'page': 4, 'count': 1}, {'page': 2, 'count': 2}]
-2024-06-07 16:36:27,496 - INFO - {0: <page.Page object at 0x105838710>}
-2024-06-07 16:36:27,496 - INFO - Page Tracker
-[{'page': 0, 'count': 0}, {'page': 1, 'count': 1}, {'page': 3, 'count': 1}, {'page': 4, 'count': 1}, {'page': 2, 'count': 2}]
-2024-06-07 16:36:27,498 - INFO - Reading page 1
-2024-06-07 16:36:27,498 - INFO - {1: <page.Page object at 0x105838500>, 0: <page.Page object at 0x105838710>}
-2024-06-07 16:36:27,498 - INFO - Page Tracker
-[{'page': 0, 'count': 0}, {'page': 1, 'count': 0}, {'page': 3, 'count': 1}, {'page': 4, 'count': 1}, {'page': 2, 'count': 2}]
-2024-06-07 16:36:27,499 - INFO - Reading page 2
-2024-06-07 16:36:27,499 - INFO - {2: <page.Page object at 0x1058383b0>, 0: <page.Page object at 0x105838710>, 1: <page.Page object at 0x105838500>}
-2024-06-07 16:36:27,499 - INFO - Page Tracker
-[{'page': 0, 'count': 0}, {'page': 1, 'count': 0}, {'page': 3, 'count': 1}, {'page': 4, 'count': 1}, {'page': 2, 'count': 1}]
-2024-06-07 16:36:27,501 - INFO - Reading page 3
-2024-06-07 16:36:27,501 - INFO - {3: <page.Page object at 0x105838a10>, 1: <page.Page object at 0x105838500>, 2: <page.Page object at 0x1058383b0>}
-2024-06-07 16:36:27,501 - INFO - Page Tracker
-[{'page': 0, 'count': 0}, {'page': 1, 'count': 0}, {'page': 3, 'count': 0}, {'page': 4, 'count': 1}, {'page': 2, 'count': 1}]
-2024-06-07 16:36:27,503 - INFO - Reading page 4
-2024-06-07 16:36:27,503 - INFO - {4: <page.Page object at 0x105839ee0>, 3: <page.Page object at 0x105838a10>, 2: <page.Page object at 0x1058383b0>}
-2024-06-07 16:36:27,503 - INFO - Page Tracker
-[{'page': 0, 'count': 0}, {'page': 1, 'count': 0}, {'page': 3, 'count': 0}, {'page': 4, 'count': 0}, {'page': 2, 'count': 1}]
-2024-06-07 16:36:27,509 - INFO - Removing page 2
-2024-06-07 16:36:27,521 - INFO - Removing page 3
-2024-06-07 16:36:27,522 - INFO - Reading page 2
-2024-06-07 16:36:27,522 - INFO - {2: <page.Page object at 0x10583a8a0>, 4: <page.Page object at 0x105839ee0>}
-2024-06-07 16:36:27,522 - INFO - Page Tracker
-[{'page': 0, 'count': 0}, {'page': 1, 'count': 0}, {'page': 3, 'count': 0}, {'page': 4, 'count': 0}, {'page': 2, 'count': 0}]
+2024-06-08 16:30:02,418 - INFO - Reading page 0
+2024-06-08 16:30:02,426 - INFO - Reading page 1
+2024-06-08 16:30:02,432 - INFO - Reading page 2
+2024-06-08 16:30:02,438 - INFO - Reading page 3
+2024-06-08 16:30:02,443 - INFO - Reading page 1
+2024-06-08 16:30:02,449 - INFO - Reading page 4

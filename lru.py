@@ -23,7 +23,7 @@ class Lru(Replacer):
         return exist, node
 
             
-    def replace_page(self, new_page, node):
+    def replace_page(self, new_page, node, index):
         # Check if the new page is already in the local memory
         exist, node = self.check_existing(new_page, node) 
         if exist:

@@ -21,8 +21,9 @@ class Simulator:
             node_id = instruction[0]
             page_id = instruction[1]
             mode = instruction[2]
+            index = instruction[3]
             self.logger.info(f"Running simulation of {instruction}")
-            self.dsmSystem.execute_instruction(node_id, page_id, mode)
+            self.dsmSystem.execute_instruction(node_id, page_id, mode, index)
         self.dsmSystem.print_detailed_info()
 
         

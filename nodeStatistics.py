@@ -48,7 +48,7 @@ class NodeStatistics:
         """
         Generates and prints a table with statistics and their percentages using rich.
         """
-        total = self.hits + self.page_faults + self.invalidations
+        total = self.hits + self.page_faults
         hits_percentage = (self.hits / total * 100) if total > 0 else 0
         page_faults_percentage = (self.page_faults / total * 100) if total > 0 else 0
         invalidations_percentage = (self.invalidations / total * 100) if total > 0 else 0
@@ -64,5 +64,6 @@ class NodeStatistics:
         table.add_row("Invalidations", str(self.invalidations), f"{invalidations_percentage:.2f}%")
 
         console = Console(record=True)
+        console.print(table)
         logger.info(console.export_text())
         return console.export_text()

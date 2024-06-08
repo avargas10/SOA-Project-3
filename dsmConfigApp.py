@@ -36,7 +36,7 @@ class DSMConfigApp:
         ttk.Checkbutton(self.root, variable=self.replication_var).grid(row=4, column=1)
         
         # List of references
-        ttk.Label(self.root, text="Page References (example: output.txt):").grid(row=5, column=0, sticky=tk.W)
+        ttk.Label(self.root, text="Page References (example: instructions.txt):").grid(row=5, column=0, sticky=tk.W)
         self.references_var = tk.StringVar()
         ttk.Entry(self.root, textvariable=self.references_var).grid(row=5, column=1)
         
@@ -55,7 +55,9 @@ class DSMConfigApp:
             "4. Page Replacement Algorithm: Algoritmo de reemplazo de páginas a utilizar. Opciones: LRU (Least Recently Used), Optimal, FIFO (First In First Out).\n"
             "5. Enable Replication: Opción para habilitar la replicación de páginas entre nodos.\n"
             "6. Page References: Lista de referencias de páginas en el formato 'node,page,mode', donde 'node' es el identificador del nodo, 'page' es la página y 'mode' es el modo de acceso ('read' o 'write').\n\n"
-            "Una vez configurados los parámetros, presione 'Submit' para iniciar la simulación."
+            "Los logs de estadisticas del sistema se guardaran en el archivo logs/results.txt.\n"
+            "Una vez configurados los parámetros, presione 'Submit' para iniciar la simulación.\n"
+            
         )
         messagebox.showinfo("Ayuda", help_text)
 
@@ -93,9 +95,11 @@ class DSMConfigApp:
     def load_references(self, references_path):
         with open(references_path, 'r') as file:
             references = []
+            index = 0
             for line in file:
                 node, page, mode = line.strip().split(',')
-                references.append((int(node), page, mode))
+                references.append((int(node), page, mode, index))
+                index += 1
             return references
 
     def simulate_dsm(self, config, references):

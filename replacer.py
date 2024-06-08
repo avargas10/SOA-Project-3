@@ -6,7 +6,7 @@ class Replacer(ABC):
     def replace_page(self, new_page, node):
         pass
 
-    def check_existing(self, new_page, node):
+    def check_existing(self, new_page, node, index):
         exist = False
         for idx, page in enumerate(node.local_memory):
             if page.id == new_page.id:

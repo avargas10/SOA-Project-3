@@ -26,7 +26,7 @@ class Node:
         return f"Node({self.id}, {self.local_memory})"
     
     def print_status(self):
-        vmem = display_virtual_memory(self.local_memory, self.loggerStats, "Node" + str(self.id) + " Local Memory")
+        vmem = display_virtual_memory(self.local_memory, self.loggerStats, "Node " + str(self.id) + " Local Memory")
         stats =  self.nodeStatistics.generate_table(self.loggerStats)
         return vmem + '\n' + stats
     
@@ -76,13 +76,21 @@ class Node:
                 break
         self.print_status()
 
+    def replace_page(self, old_page, new_page):
+        for idx,page in enumerate(self.local_memory):
+            if page.id == old_page.id:
+                self.logger.info(f"Removing page {old_page.id} inserting {new_page.id}")
+                self.local_memory.pop(idx)
+                self.local_memory.insert(idx, copy.deepcopy(new_page))
+                break
+        self.print_status()
+
     def check_page_fault(self, exist):
         if not exist:
             self.nodeStatistics.increment_page_faults()
     
     def assign_page_tracker(self, page_tracker):
         self.page_tracker = page_tracker
-        self.logger.info(f"Page Tracker\n{page_tracker}")
 
     def operate_page(self, page_id):
         # Encontrar el índice de la página en el arreglo

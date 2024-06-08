@@ -7,6 +7,7 @@ from page import Page
 from fifo import Fifo
 from lru import Lru
 from optimal import Optimal
+from optimal_fixed import OptimalF
 from constants import DSM_LOGGER
 from painter import display_virtual_memory
 import copy
@@ -50,7 +51,7 @@ class DSMSystem:
         elif replacement_algorithm == Replacers.LRU.value:
             self.replacer = Lru()
         elif replacement_algorithm == Replacers.OPTIMAL.value:
-            self.replacer = Optimal(self.instructions)
+            self.replacer = OptimalF(self.instructions)
         
 
     def create_pages(self):
@@ -90,11 +91,11 @@ class DSMSystem:
                 self.nodes[idx] = new_node
                 new_node.print_status()
 
-    def exec_read(self, node , new_page_id):
+    def exec_read(self, node , new_page_id, index):
         page = self.get_page_from_id(new_page_id)
         exist, content = node.read_page(new_page_id)
         content = page.content
-        node = self.replacer.replace_page(page, node)
+        node = self.replacer.replace_page(page, node, index)
         self.update_node(node)
         return content
 
@@ -111,25 +112,25 @@ class DSMSystem:
                 self.logger.info(f"Removing {page_id} for {node.id}")
                 node.remove_page(page_id)
 
-    def exec_write(self, node , new_page_id):
+    def exec_write(self, node , new_page_id, index):
         new_page = self.update_page(new_page_id)
         exist = node.write_page(new_page)
-        node = self.replacer.replace_page(new_page, node)
+        node = self.replacer.replace_page(new_page, node, index)
         if self.replication:
             self.invalid_page(new_page.id, node.id)
         self.update_node(node)
         self.print_vmem()
         return
 
-    def execute_instruction(self, node_id, new_page_id, mode):
+    def execute_instruction(self, node_id, new_page_id, mode, index):
         new_page_id = int(new_page_id)
         node = self.get_node(node_id)
         exist = False
         content = None
         if mode == Modes.read.value:
-            self.exec_read(node, new_page_id)
+            self.exec_read(node, new_page_id, index)
         elif mode == Modes.write.value:
-            self.exec_write(node, new_page_id)
+            self.exec_write(node, new_page_id, index)
         self.logger.info(f"Replication {self.replication}")
         if not self.replication:
             self.remove_page(new_page_id, node_id)
@@ -156,7 +157,7 @@ class DSMSystem:
             total_page_faults += stats.page_faults
             total_invalidations += stats.invalidations
 
-        total_events = total_hits + total_page_faults + total_invalidations
+        total_events = total_hits + total_page_faults
         hits_percentage = (total_hits / total_events * 100) if total_events > 0 else 0
         page_faults_percentage = (total_page_faults / total_events * 100) if total_events > 0 else 0
         invalidations_percentage = (total_invalidations / total_events * 100) if total_events > 0 else 0

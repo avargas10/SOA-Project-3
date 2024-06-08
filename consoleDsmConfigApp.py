@@ -25,9 +25,11 @@ class ConsoleDSMConfigApp:
     def load_references(self, references_path):
         with open(references_path, 'r') as file:
             references = []
+            index = 0
             for line in file:
                 node, page, mode = line.strip().split(',')
-                references.append((int(node), page, mode))
+                references.append((int(node), page, mode, index))
+                index += 1
             return references
     
     

@@ -1,4 +1,4 @@
-2024-06-07 16:36:27,496 - INFO -      Shared Virtual Memory     
+2024-06-08 16:30:02,418 - INFO -      Shared Virtual Memory     
 ┏━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━┓
 ┃ Page ID ┃ Content ┃ Invalid ┃
 ┡━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━┩
@@ -20,68 +20,68 @@
 │   15    │   15    │  False  │
 └─────────┴─────────┴─────────┘
 
-2024-06-07 16:36:27,496 - INFO - Creating system with 16 VMem Size, 4 Nodes and 3 pages per Node
-2024-06-07 16:36:27,496 - INFO - Page 0 found
-2024-06-07 16:36:27,497 - INFO - Replication False
-2024-06-07 16:36:27,497 - INFO - Removing 0 for 1
-2024-06-07 16:36:27,497 - INFO - Removing 0 for 2
-2024-06-07 16:36:27,497 - INFO - Removing 0 for 3
-2024-06-07 16:36:27,498 - INFO - Node 0 page status False with content None
-2024-06-07 16:36:27,498 - INFO - Page 1 found
-2024-06-07 16:36:27,498 - INFO - Replication False
-2024-06-07 16:36:27,498 - INFO - Removing 1 for 1
-2024-06-07 16:36:27,499 - INFO - Removing 1 for 2
-2024-06-07 16:36:27,499 - INFO - Removing 1 for 3
-2024-06-07 16:36:27,499 - INFO - Node 0 page status False with content None
-2024-06-07 16:36:27,499 - INFO - Page 2 found
-2024-06-07 16:36:27,500 - INFO - Replication False
-2024-06-07 16:36:27,500 - INFO - Removing 2 for 1
-2024-06-07 16:36:27,500 - INFO - Removing 2 for 2
-2024-06-07 16:36:27,501 - INFO - Removing 2 for 3
-2024-06-07 16:36:27,501 - INFO - Node 0 page status False with content None
-2024-06-07 16:36:27,501 - INFO - Page 3 found
-2024-06-07 16:36:27,502 - INFO - Replication False
-2024-06-07 16:36:27,502 - INFO - Removing 3 for 1
-2024-06-07 16:36:27,502 - INFO - Removing 3 for 2
-2024-06-07 16:36:27,502 - INFO - Removing 3 for 3
-2024-06-07 16:36:27,503 - INFO - Node 0 page status False with content None
-2024-06-07 16:36:27,503 - INFO - Page 4 found
-2024-06-07 16:36:27,503 - INFO - Replication False
-2024-06-07 16:36:27,503 - INFO - Removing 4 for 1
-2024-06-07 16:36:27,504 - INFO - Removing 4 for 2
-2024-06-07 16:36:27,504 - INFO - Removing 4 for 3
-2024-06-07 16:36:27,504 - INFO - Node 0 page status False with content None
-2024-06-07 16:36:27,504 - INFO - Page 0 found
-2024-06-07 16:36:27,505 - INFO - Replication False
-2024-06-07 16:36:27,505 - INFO - Removing 0 for 0
-2024-06-07 16:36:27,506 - INFO - Removing 0 for 2
-2024-06-07 16:36:27,506 - INFO - Removing 0 for 3
-2024-06-07 16:36:27,506 - INFO - Node 1 page status False with content None
-2024-06-07 16:36:27,506 - INFO - Page 1 found
-2024-06-07 16:36:27,507 - INFO - Replication False
-2024-06-07 16:36:27,507 - INFO - Removing 1 for 0
-2024-06-07 16:36:27,507 - INFO - Removing 1 for 2
-2024-06-07 16:36:27,508 - INFO - Removing 1 for 3
-2024-06-07 16:36:27,508 - INFO - Node 1 page status False with content None
-2024-06-07 16:36:27,508 - INFO - Page 2 found
-2024-06-07 16:36:27,509 - INFO - Replication False
-2024-06-07 16:36:27,509 - INFO - Removing 2 for 0
-2024-06-07 16:36:27,509 - INFO - Removing 2 for 2
-2024-06-07 16:36:27,510 - INFO - Removing 2 for 3
-2024-06-07 16:36:27,510 - INFO - Node 1 page status False with content None
-2024-06-07 16:36:27,510 - INFO - Updating page 2
-2024-06-07 16:36:27,512 - INFO -                 Shared Virtual Memory                 
+2024-06-08 16:30:02,418 - INFO - Creating system with 16 VMem Size, 4 Nodes and 3 pages per Node
+2024-06-08 16:30:02,418 - INFO - Page 0 found
+2024-06-08 16:30:02,420 - INFO - Replication False
+2024-06-08 16:30:02,420 - INFO - Removing 0 for 1
+2024-06-08 16:30:02,422 - INFO - Removing 0 for 2
+2024-06-08 16:30:02,424 - INFO - Removing 0 for 3
+2024-06-08 16:30:02,425 - INFO - Node 0 page status False with content None
+2024-06-08 16:30:02,426 - INFO - Page 1 found
+2024-06-08 16:30:02,427 - INFO - Replication False
+2024-06-08 16:30:02,427 - INFO - Removing 1 for 1
+2024-06-08 16:30:02,429 - INFO - Removing 1 for 2
+2024-06-08 16:30:02,430 - INFO - Removing 1 for 3
+2024-06-08 16:30:02,432 - INFO - Node 0 page status False with content None
+2024-06-08 16:30:02,432 - INFO - Page 2 found
+2024-06-08 16:30:02,434 - INFO - Replication False
+2024-06-08 16:30:02,434 - INFO - Removing 2 for 1
+2024-06-08 16:30:02,435 - INFO - Removing 2 for 2
+2024-06-08 16:30:02,437 - INFO - Removing 2 for 3
+2024-06-08 16:30:02,438 - INFO - Node 0 page status False with content None
+2024-06-08 16:30:02,438 - INFO - Page 3 found
+2024-06-08 16:30:02,440 - INFO - Replication False
+2024-06-08 16:30:02,440 - INFO - Removing 3 for 1
+2024-06-08 16:30:02,441 - INFO - Removing 3 for 2
+2024-06-08 16:30:02,442 - INFO - Removing 3 for 3
+2024-06-08 16:30:02,443 - INFO - Node 0 page status False with content None
+2024-06-08 16:30:02,443 - INFO - Page 1 found
+2024-06-08 16:30:02,445 - INFO - Replication False
+2024-06-08 16:30:02,445 - INFO - Removing 1 for 1
+2024-06-08 16:30:02,446 - INFO - Removing 1 for 2
+2024-06-08 16:30:02,448 - INFO - Removing 1 for 3
+2024-06-08 16:30:02,449 - INFO - Node 0 page status False with content None
+2024-06-08 16:30:02,449 - INFO - Page 4 found
+2024-06-08 16:30:02,450 - INFO - Replication False
+2024-06-08 16:30:02,450 - INFO - Removing 4 for 1
+2024-06-08 16:30:02,451 - INFO - Removing 4 for 2
+2024-06-08 16:30:02,452 - INFO - Removing 4 for 3
+2024-06-08 16:30:02,454 - INFO - Node 0 page status False with content None
+2024-06-08 16:30:02,454 - INFO - Page 5 found
+2024-06-08 16:30:02,455 - INFO - Replication False
+2024-06-08 16:30:02,455 - INFO - Removing 5 for 0
+2024-06-08 16:30:02,456 - INFO - Removing 5 for 2
+2024-06-08 16:30:02,457 - INFO - Removing 5 for 3
+2024-06-08 16:30:02,458 - INFO - Node 1 page status False with content None
+2024-06-08 16:30:02,458 - INFO - Page 6 found
+2024-06-08 16:30:02,460 - INFO - Replication False
+2024-06-08 16:30:02,460 - INFO - Removing 6 for 0
+2024-06-08 16:30:02,461 - INFO - Removing 6 for 2
+2024-06-08 16:30:02,462 - INFO - Removing 6 for 3
+2024-06-08 16:30:02,463 - INFO - Node 1 page status False with content None
+2024-06-08 16:30:02,463 - INFO - Updating page 7
+2024-06-08 16:30:02,466 - INFO -                 Shared Virtual Memory                 
 ┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓
 ┃ Page ID ┃            Content             ┃ Invalid ┃
 ┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩
 │    0    │               0                │  False  │
 │    1    │               1                │  False  │
-│    2    │ Update at: 2024-06-07 16:36:27 │  False  │
+│    2    │               2                │  False  │
 │    3    │               3                │  False  │
 │    4    │               4                │  False  │
 │    5    │               5                │  False  │
 │    6    │               6                │  False  │
-│    7    │               7                │  False  │
+│    7    │ Update at: 2024-06-08 16:30:02 │  False  │
 │    8    │               8                │  False  │
 │    9    │               9                │  False  │
 │   10    │               10               │  False  │
@@ -92,18 +92,18 @@
 │   15    │               15               │  False  │
 └─────────┴────────────────────────────────┴─────────┘
 
-2024-06-07 16:36:27,515 - INFO -                 Shared Virtual Memory                 
+2024-06-08 16:30:02,469 - INFO -                 Shared Virtual Memory                 
 ┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓
 ┃ Page ID ┃            Content             ┃ Invalid ┃
 ┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩
 │    0    │               0                │  False  │
 │    1    │               1                │  False  │
-│    2    │ Update at: 2024-06-07 16:36:27 │  False  │
+│    2    │               2                │  False  │
 │    3    │               3                │  False  │
 │    4    │               4                │  False  │
 │    5    │               5                │  False  │
 │    6    │               6                │  False  │
-│    7    │               7                │  False  │
+│    7    │ Update at: 2024-06-08 16:30:02 │  False  │
 │    8    │               8                │  False  │
 │    9    │               9                │  False  │
 │   10    │               10               │  False  │
@@ -114,24 +114,24 @@
 │   15    │               15               │  False  │
 └─────────┴────────────────────────────────┴─────────┘
 
-2024-06-07 16:36:27,515 - INFO - Replication False
-2024-06-07 16:36:27,515 - INFO - Removing 2 for 0
-2024-06-07 16:36:27,515 - INFO - Removing 2 for 2
-2024-06-07 16:36:27,516 - INFO - Removing 2 for 3
-2024-06-07 16:36:27,516 - INFO - Node 1 page status False with content None
-2024-06-07 16:36:27,516 - INFO - Updating page 3
-2024-06-07 16:36:27,518 - INFO -                 Shared Virtual Memory                 
+2024-06-08 16:30:02,470 - INFO - Replication False
+2024-06-08 16:30:02,470 - INFO - Removing 7 for 0
+2024-06-08 16:30:02,471 - INFO - Removing 7 for 2
+2024-06-08 16:30:02,472 - INFO - Removing 7 for 3
+2024-06-08 16:30:02,473 - INFO - Node 1 page status False with content None
+2024-06-08 16:30:02,473 - INFO - Updating page 5
+2024-06-08 16:30:02,475 - INFO -                 Shared Virtual Memory                 
 ┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓
 ┃ Page ID ┃            Content             ┃ Invalid ┃
 ┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩
 │    0    │               0                │  False  │
 │    1    │               1                │  False  │
-│    2    │ Update at: 2024-06-07 16:36:27 │  False  │
-│    3    │ Update at: 2024-06-07 16:36:27 │  False  │
+│    2    │               2                │  False  │
+│    3    │               3                │  False  │
 │    4    │               4                │  False  │
-│    5    │               5                │  False  │
+│    5    │ Update at: 2024-06-08 16:30:02 │  False  │
 │    6    │               6                │  False  │
-│    7    │               7                │  False  │
+│    7    │ Update at: 2024-06-08 16:30:02 │  False  │
 │    8    │               8                │  False  │
 │    9    │               9                │  False  │
 │   10    │               10               │  False  │
@@ -142,18 +142,18 @@
 │   15    │               15               │  False  │
 └─────────┴────────────────────────────────┴─────────┘
 
-2024-06-07 16:36:27,521 - INFO -                 Shared Virtual Memory                 
+2024-06-08 16:30:02,479 - INFO -                 Shared Virtual Memory                 
 ┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓
 ┃ Page ID ┃            Content             ┃ Invalid ┃
 ┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩
 │    0    │               0                │  False  │
 │    1    │               1                │  False  │
-│    2    │ Update at: 2024-06-07 16:36:27 │  False  │
-│    3    │ Update at: 2024-06-07 16:36:27 │  False  │
+│    2    │               2                │  False  │
+│    3    │               3                │  False  │
 │    4    │               4                │  False  │
-│    5    │               5                │  False  │
+│    5    │ Update at: 2024-06-08 16:30:02 │  False  │
 │    6    │               6                │  False  │
-│    7    │               7                │  False  │
+│    7    │ Update at: 2024-06-08 16:30:02 │  False  │
 │    8    │               8                │  False  │
 │    9    │               9                │  False  │
 │   10    │               10               │  False  │
@@ -164,20 +164,26 @@
 │   15    │               15               │  False  │
 └─────────┴────────────────────────────────┴─────────┘
 
-2024-06-07 16:36:27,521 - INFO - Replication False
-2024-06-07 16:36:27,521 - INFO - Removing 3 for 0
-2024-06-07 16:36:27,521 - INFO - Removing 3 for 2
-2024-06-07 16:36:27,522 - INFO - Removing 3 for 3
-2024-06-07 16:36:27,522 - INFO - Node 1 page status False with content None
-2024-06-07 16:36:27,522 - INFO - Page 2 found
-2024-06-07 16:36:27,523 - INFO - Replication False
-2024-06-07 16:36:27,523 - INFO - Removing 2 for 1
-2024-06-07 16:36:27,523 - INFO - Removing 2 for 2
-2024-06-07 16:36:27,524 - INFO - Removing 2 for 3
-2024-06-07 16:36:27,524 - INFO - Node 0 page status False with content None
-2024-06-07 16:36:27,524 - INFO - Page 1 found
-2024-06-07 16:36:27,525 - INFO - Replication False
-2024-06-07 16:36:27,525 - INFO - Removing 1 for 0
-2024-06-07 16:36:27,525 - INFO - Removing 1 for 2
-2024-06-07 16:36:27,525 - INFO - Removing 1 for 3
-2024-06-07 16:36:27,526 - INFO - Node 1 page status False with content None
+2024-06-08 16:30:02,479 - INFO - Replication False
+2024-06-08 16:30:02,479 - INFO - Removing 5 for 0
+2024-06-08 16:30:02,480 - INFO - Removing 5 for 2
+2024-06-08 16:30:02,481 - INFO - Removing 5 for 3
+2024-06-08 16:30:02,482 - INFO - Node 1 page status False with content None
+2024-06-08 16:30:02,482 - INFO - Page 8 found
+2024-06-08 16:30:02,483 - INFO - Replication False
+2024-06-08 16:30:02,483 - INFO - Removing 8 for 0
+2024-06-08 16:30:02,485 - INFO - Removing 8 for 2
+2024-06-08 16:30:02,485 - INFO - Removing 8 for 3
+2024-06-08 16:30:02,486 - INFO - Node 1 page status False with content None
+2024-06-08 16:30:02,486 - INFO - Page 6 found
+2024-06-08 16:30:02,488 - INFO - Replication False
+2024-06-08 16:30:02,488 - INFO - Removing 6 for 0
+2024-06-08 16:30:02,489 - INFO - Removing 6 for 2
+2024-06-08 16:30:02,490 - INFO - Removing 6 for 3
+2024-06-08 16:30:02,491 - INFO - Node 1 page status False with content None
+2024-06-08 16:30:02,491 - INFO - Page 9 found
+2024-06-08 16:30:02,492 - INFO - Replication False
+2024-06-08 16:30:02,492 - INFO - Removing 9 for 0
+2024-06-08 16:30:02,493 - INFO - Removing 9 for 2
+2024-06-08 16:30:02,494 - INFO - Removing 9 for 3
+2024-06-08 16:30:02,495 - INFO - Node 1 page status False with content None

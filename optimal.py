@@ -43,7 +43,7 @@ class Optimal(Replacer):
         return exist, node
 
             
-    def replace_page(self, new_page, node):
+    def replace_page(self, new_page, node, index):
         # Check if the new page is already in the local memory
         if not node.page_tracker:
             self.get_page_tracking(node)
